@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  30 AUG 2018 13:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  30 AUG 2018 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -245,15 +245,15 @@ LaTeX Font Info:    ... okay on input line 70.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
+* h-part:(L,W,R)=(45.53044pt, 523.23412pt, 45.53044pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=557.38951pt
-* \textheight=738.0645pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
-* \topmargin=-80.81725pt
+* \textwidth=523.23412pt
+* \textheight=722.7pt
+* \oddsidemargin=-26.73955pt
+* \evensidemargin=-26.73955pt
+* \topmargin=-73.135pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -335,7 +335,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
 Here is how much of TeX's memory you used:
  5945 strings out of 492649
  88207 string characters out of 6129622
- 195488 words of memory out of 5000000
+ 195487 words of memory out of 5000000
  9794 multiletter control sequences out of 15000+600000
  8352 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -352,7 +352,7 @@ cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local
 /texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on resume.pdf (1 page, 145020 bytes).
+Output written on resume.pdf (1 page, 145023 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
