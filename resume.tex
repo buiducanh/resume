@@ -3,7 +3,7 @@
 \documentclass[letterpaper, 10pt]{article}
 
 % \usepackage[empty]{fullpage}
-\usepackage[left=.63in, right=.63in, top=.5in, bottom=.5in]{geometry}
+\usepackage[left=.63in, right=.63in, top=.25in, bottom=.5in]{geometry}
 \usepackage{titlesec}
 \usepackage[usenames]{color}
 \usepackage{enumitem}
@@ -11,6 +11,9 @@
 \usepackage{fancyhdr}
 \usepackage{multirow}
 \usepackage{comment}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{Z}{>{\raggedleft\arraybackslash}X}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -70,10 +73,10 @@
 \begin{document}
 
 % HEADING
-\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
+\begin{tabularx}{\textwidth}{X Y Z}
   \textit{\href{https://github.com/buiducanh}{\scriptsize\textbf{Github}: https://github.com/buiducanh}} & \multirow{2}{*}{\textbf{\Large Anh D Bui}} & \textit{\href{mailto:b.ducanh96@gmail.com}{\scriptsize b.ducanh96@gmail.com}}\vspace{-3.5pt} \\
   \textit{\href{https://linkedin.com/in/buiducanh}{\scriptsize\textbf{Linkedin}: https://linkedin.com/in/buiducanh}} & & \textit{{\scriptsize (617)-302-7125}} \\
-\end{tabular*}\vspace{-2.5pt}
+\end{tabularx}\vspace{.25in}
 
 % WORK EXPERIENCE
 \section{Work Experience}
