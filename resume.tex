@@ -1,6 +1,6 @@
 %&pdflatex
 
-\documentclass[letterpaper, 11pt]{article}
+\documentclass[letterpaper, 10pt]{article}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{multirow}
+\usepackage{comment}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -30,11 +31,11 @@
 
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0pt}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0pt}{}[\color{black}\titlerule \vspace{-3pt}]
 
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{#2 \vspace{-2pt}}
   }
 }
 
@@ -43,12 +44,12 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep {\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-\renewcommand{\labelitemii}{$\circle$}
+\renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -59,22 +60,108 @@
 
 % HEADING
 \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
-  \textit{\href{https://github.com/buiducanh}{\scriptsize\textbf{Github}: https://github.com/buiducanh}} & \multirow{2}{*}{\textbf{\Large Anh D Bui}} & \textit{\href{mailto:b.ducanh96@gmail.com}{\scriptsize b.ducanh96@gmail.com}}\vspace{-5pt} \\
-  \textit{\href{https://github.com/buiducanh}{\scriptsize\textbf{Github}: https://github.com/buiducanh}} & & \textit{{\scriptsize (617)-302-7125}} \\
-\end{tabular*}
+  \textit{\href{https://github.com/buiducanh}{\scriptsize\textbf{Github}: https://github.com/buiducanh}} & \multirow{2}{*}{\textbf{\Large Anh D Bui}} & \textit{\href{mailto:b.ducanh96@gmail.com}{\scriptsize b.ducanh96@gmail.com}}\vspace{-3.5pt} \\
+  \textit{\href{https://linkedin.com/in/buiducanh}{\scriptsize\textbf{Linkedin}: https://linkedin.com/in/buiducanh}} & & \textit{{\scriptsize (617)-302-7125}} \\
+\end{tabular*}\vspace{-5pt}
 
 % WORK EXPERIENCE
 \section{Work Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Facebook}{Menlo Park, CA}
-      {Software Engineer Intern at Instagram}{May 2017 – August 2017}
+      {Facebook}{Seattle, WA}
+      {Software Engineer}{Summer 2017, August 2018 - Present}
 
       \resumeItemListStart
-        \resumeItem{}
+        \resumeItem{}{Designed and implemented an e2e solution to manage regressions in Instagram webservers}
+        \resumeItem{}{Converted a fully manual process to a semi-automated one and saved 50\% of engineers’ time}
+        \resumeItem{}{Collaborated with Facebook’s team to unify the regression management platform}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Google}{Irvine, CA}
+      {Software Engineer Intern}{May 2016 – August 2016}
+
+      \resumeItemListStart
+        \resumeItem{}{Developed a feature in Google Analytics 360 Suite to customize the homepage for organizations
+which enhance resellers’ flexibility in interfacing with their clients}
+        \resumeItem{}{Automated the 360 Suite’s Angular 2 migration with scripts and cut engineering time by 30\%}
+        \resumeItem{}{Worked with the Angular 2 team to formulate and implement best practices within the application}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Gweepi Medical}{North Andover, MA}
+      {Software Engineer Intern}{June 2015 – May 2016}
+
+      \resumeItemListStart
+        \resumeItem{}{Provided a mobile application to 3000 aides at 25 nursing homes to document residents’ activities}
+        \resumeItem{}{Extended data collection model and developed fully-tested data presentation views}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-\end{document}
+% EDUCATION
+\section{Education}
+  \resumeSubHeadingListStart
 
+    \resumeSubheading
+      {University of Massachusetts}{Amherst, MA}
+      {B.S. in Computer Science}{Sept. 2014 – Dec. 2017}
+
+      \resumeItemListStart
+        \resumeItem{}{GPA: 3.96 - Dean's List (All semesters)}
+        \resumeItem{}{Relevant coursework:}
+
+      \resumeItemListEnd
+      \small
+      \begin{tabular*}{\linewidth}{l @{\extracolsep{\fill}} l}
+        Information Systems – Cited for “near perfect” scores & Introduction to Computation – Cited for 5\textsuperscript{th} highest scores \\
+        Combinatorics \& Graph Theory & Introduction to Algorithms \\
+        Machine Learning – Cited for outstanding work & Artificial Intelligence – Cited for being 1\textsuperscript{st} out of 96 \\
+      \end{tabular*}
+
+  \resumeSubHeadingListEnd
+
+% PROJECTS
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+
+      {Informant $\vert$ 2\textsuperscript{nd} place out of 50, silver MLH medal}{New York, NY}
+      {HackNY}{Fall 2015}
+
+      \resumeItemListStart
+        \resumeItem{}{Made a Chrome extension to provide contextual information to YouTube videos}
+        \resumeItem{}{Developed a Node.js server to process data and communicate with the extension}
+        \resumeItem{}{Leveraged Project Oxford to do facial recognition on celebrities}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Prepper}{Amherst, MA}
+      {CS326 Web Programming}{Spring 2016}
+
+      \resumeItemListStart
+        \resumeItem{}{Used MongoDB, Node, and React to build a web platform for interview prep, in a team of 6}
+        \resumeItem{}{Integrated video call using WebRTC protocol}
+        \resumeItem{}{Independently developed Google Map markers, notifications, and chatrooms for Honors program}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ActivityTracker}{Amherst, MA}
+      {CS390MB Mobile Health Sensing \& Monitoring}{Fall 2015}
+
+      \resumeItemListStart
+        \resumeItem{}{Developed an Android app to track health-related metrics}
+        \resumeItem{}{Implemented algorithms to track footsteps, classify activities, and calculate heart rate}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% SKILLS
+\section{Skills}
+  \resumeItemListStart
+    \resumeItem{Proficient}{: Java, Python, Javascript, Shell, Hack, React}
+    \resumeItem{Familiar}{: C++, Tensorflow, Android, HTML, CSS}
+  \resumeItemListEnd
+
+\end{document}
